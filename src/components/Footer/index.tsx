@@ -4,7 +4,7 @@ export function Footer() {
 	return (
 		<footer
 			id="contact"
-			className="row-start-3 flex gap-6 flex-wrap items-center justify-center"
+			className="flex flex-col items-center justify-center w-full"
 		>
 			<Main />
 
@@ -15,8 +15,10 @@ export function Footer() {
 
 function Rights() {
 	return (
-		<div>
-			<p>Lorem @ Todos os direitos reservados</p>
+		<div className="flex items-center md:justify-start justify-center bg-gray-300 w-full p-4">
+			<p className="text-gray-800 text-sm text-center md:ml-24 md:w-full">
+				Lorem @ Todos os direitos reservados
+			</p>
 		</div>
 	);
 }
