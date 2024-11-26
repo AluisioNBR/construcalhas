@@ -4,7 +4,7 @@ export function Intro() {
 			<p className="md:text-2xl text-xl text-red-500">
 				Telhados, calhas e construção
 			</p>
-			<h1 className="md:text-5xl text-4xl font-bold">
+			<h1 className="md:text-5xl text-4xl text-white font-bold">
 				ESPECIALISTAS
 				<br />A MAIS DE 15 ANOS
 			</h1>

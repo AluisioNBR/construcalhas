@@ -2,10 +2,10 @@ export function Services() {
 	return (
 		<article
 			className="flex flex-col w-full"
-			id="service"
+			id="services"
 		>
 			<ServiceSection
-				style="bg-red-700 md:items-end items-center"
+				style="bg-red-700 md:items-end items-center text-white"
 				title="CONSTRUÇÃO E MANUTENÇÃO DE TELHADOS E CALHAS"
 			>
 				<>
@@ -18,7 +18,7 @@ export function Services() {
 			</ServiceSection>
 
 			<ServiceSection
-				style="bg-stone-800 items-center"
+				style="bg-stone-800 items-center text-white"
 				title="CONSTRUÇÃO CIVIL E REFORMA EM GERAL"
 				titleCenter
 			>

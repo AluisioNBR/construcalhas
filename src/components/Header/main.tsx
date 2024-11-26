@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export function Main() {
 	return (
@@ -35,8 +36,10 @@ function Contact({ local, link, children }: ContactType) {
 				className="flex flex-row items-center gap-4"
 				href={link}
 			>
-				<img
-					className="w-[48px] h-[48px] hover:opacity-50"
+				<Image
+					className="hover:opacity-50"
+					width={48}
+					height={48}
 					src="/images/whatsapp-logo.png"
 					alt={children}
 				/>

@@ -5,6 +5,7 @@ import { useState, useEffect } from 'react';
 
 export function NavBar() {
 	const [windowSize, setWindowSize] = useState(800);
+	const [scrollPosition, setScrollPosition] = useState(0);
 	const [isNavActive, setIsNavActive] = useState(
 		windowSize > 767 ? true : false
 	);
@@ -17,14 +18,17 @@ export function NavBar() {
 		);
 	}, [windowSize]);
 
-	useEffect(
-		() =>
-			window.addEventListener('resize', () => setWindowSize(window.innerWidth)),
-		[]
-	);
+	useEffect(() => {
+		window.addEventListener('resize', () => setWindowSize(window.innerWidth));
+		window.addEventListener('scroll', () => setScrollPosition(window.scrollY));
+	}, []);
 
 	return (
-		<div className="flex flex-col md:items-center items-end md:block w-full py-4 border-t-[1px] border-[#fff5]">
+		<div
+			className={`flex flex-col md:items-center items-end md:block w-full py-4 border-y-[1px] border-[#fff5] bg-red-700 ${
+				scrollPosition > 90 ? 'fixed top-0' : ''
+			}`}
+		>
 			<button
 				className="md:hidden block md:mx-0 mx-8"
 				onClick={menuClick}
