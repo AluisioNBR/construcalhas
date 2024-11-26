@@ -1,6 +1,6 @@
 export function Intro() {
 	return (
-		<article className="flex flex-col gap-4 md:p-[10.5rem] p-32 bg-stone-800 w-full">
+		<article className="flex flex-col gap-4 md:p-[10.5rem] px-16 py-32 bg-stone-800 w-full">
 			<p className="md:text-2xl text-xl text-red-500">
 				Telhados, calhas e construção
 			</p>

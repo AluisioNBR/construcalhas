@@ -10,14 +10,18 @@ export function NavBar() {
 	);
 	const menuClick = () => setIsNavActive((prevState) => !prevState);
 
-	useEffect(
-		() => setIsNavActive(windowSize > 767 ? true : false),
-		[windowSize]
-	);
-
 	useEffect(() => {
-		window.addEventListener('resize', () => setWindowSize(window.innerWidth));
-	}, []);
+		const userAgent = navigator.userAgent.toLocaleLowerCase();
+		setIsNavActive(
+			windowSize < 768 || userAgent.includes('mobile') ? false : true
+		);
+	}, [windowSize]);
+
+	useEffect(
+		() =>
+			window.addEventListener('resize', () => setWindowSize(window.innerWidth)),
+		[]
+	);
 
 	return (
 		<div className="flex flex-col md:items-center items-end md:block w-full py-4 border-t-[1px] border-[#fff5]">
