@@ -8,6 +8,15 @@ export default {
   ],
   theme: {
     extend: {
+      keyframes: {
+      	hoverLink: {
+      		from: { opacity: 1 },
+      		to: { opacity: 0.5 }
+      	}
+      },
+      animation: {
+      	hoverLink: "hoverLink 1s easy-in-out"
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
