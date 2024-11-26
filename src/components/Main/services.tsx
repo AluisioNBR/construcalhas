@@ -58,14 +58,14 @@ function ServiceSection({
 	return (
 		<div className={`flex flex-col gap-4 md:p-28 p-16 w-full ${style}`}>
 			<h2
-				className={`text-3xl font-bold md:w-2/5 w-1/2 ${
+				className={`text-3xl font-bold md:w-2/5 w-full ${
 					titleCenter ? 'text-center' : 'md:text-left text-center'
 				}`}
 			>
 				{title}
 			</h2>
 
-			<p className="text-lg md:text-left text-center md:w-2/5 w-1/2">
+			<p className="text-lg md:text-left text-center md:w-2/5 w-full">
 				{children}
 			</p>
 		</div>
