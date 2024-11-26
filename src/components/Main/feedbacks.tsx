@@ -32,15 +32,15 @@ export function Feedbacks() {
 
 	return (
 		<article
-			className="flex flex-col items-center gap-4 p-16 bg-gray-200 w-full text-black"
+			className="flex flex-col items-center gap-4 p-16 px-2 bg-gray-200 w-full text-black"
 			id="feedbacks"
 		>
-			<h2 className="text-3xl font-bold">
+			<h2 className="text-3xl text-center font-bold">
 				O QUE NOSSOS CLIENTES DIZEM SOBRE NÓS
 			</h2>
 
-			<div className="flex flex-col items-center w-1/2 h-80">
-				<p className="text-white text-center text-lg bg-red-500 p-4">
+			<div className="flex flex-col items-center md:w-3/4 w-full h-80">
+				<p className="text-white text-center md:text-lg text-base bg-red-500 p-4">
 					{currentFeedback?.feedback}
 				</p>
 			</div>
