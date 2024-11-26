@@ -1,12 +1,12 @@
-import { Intro } from './intro'
-import { About } from './about'
-import { Feedbacks } from './feedbacks'
-import { Products } from './products'
-import { Services } from './services'
+import { Intro } from './intro';
+import { About } from './about';
+import { Feedbacks } from './feedbacks';
+import { Products } from './products';
+import { Services } from './services';
 
 export function Main() {
 	return (
-		<main className="flex flex-col row-start-2 items-center sm:items-start">
+		<main className="flex flex-col row-start-2 items-center sm:items-start w-full">
 			<Intro />
 
 			<About />
@@ -17,5 +17,5 @@ export function Main() {
 
 			<Feedbacks />
 		</main>
-	)
+	);
 }

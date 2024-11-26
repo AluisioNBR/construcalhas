@@ -1,4 +1,5 @@
 'use client';
+import Image from 'next/image';
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
 
@@ -16,7 +17,7 @@ export function NavBar() {
 
 	useEffect(() => {
 		window.addEventListener('resize', () => setWindowSize(window.innerWidth));
-	}, [])
+	}, []);
 
 	return (
 		<div className="flex flex-col md:items-center items-end md:block w-full py-4 border-t-[1px] border-[#fff5]">
@@ -24,8 +25,10 @@ export function NavBar() {
 				className="md:hidden block md:mx-0 mx-8"
 				onClick={menuClick}
 			>
-				<img
-					className="w-[48px] h-[48px] hover:opacity-50 active:opacity-25 hover:animate-hoverLink"
+				<Image
+					className="hover:opacity-50 active:opacity-25 hover:animate-hoverLink"
+					width={48}
+					height={48}
 					src="/images/menu.png"
 					alt="Menu"
 				/>

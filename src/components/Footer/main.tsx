@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { ContactType } from './types';
+import Image from 'next/image';
 
 export function Main() {
 	return (
@@ -38,8 +39,10 @@ function Contact({ children, adress, form1, form2 }: ContactType) {
 					href={adress.link}
 					className="flex flex-row items-center gap-1"
 				>
-					<img
-						className="w-5 h-5 hover:opacity-50"
+					<Image
+						className="hover:opacity-50"
+						width={20}
+						height={20}
 						src="/images/location-pin.png"
 						alt={children}
 					/>
@@ -52,8 +55,10 @@ function Contact({ children, adress, form1, form2 }: ContactType) {
 						href={form1.link}
 						className="flex flex-row items-center gap-1"
 					>
-						<img
-							className="w-5 h-5 hover:opacity-50"
+						<Image
+							className=" hover:opacity-50"
+							width={20}
+							height={20}
 							src="/images/whatsapp-logo.png"
 							alt={children}
 						/>
@@ -66,8 +71,10 @@ function Contact({ children, adress, form1, form2 }: ContactType) {
 						href={form2.link}
 						className="flex flex-row items-center gap-1"
 					>
-						<img
-							className="w-5 h-5 hover:opacity-50"
+						<Image
+							className="hover:opacity-50"
+							width={20}
+							height={20}
 							src="/images/whatsapp-logo.png"
 							alt={children}
 						/>

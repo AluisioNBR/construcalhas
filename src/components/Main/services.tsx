@@ -5,7 +5,7 @@ export function Services() {
 			id="service"
 		>
 			<ServiceSection
-				style="bg-red-700 items-end"
+				style="bg-red-700 md:items-end items-center"
 				title="CONSTRUÇÃO E MANUTENÇÃO DE TELHADOS E CALHAS"
 			>
 				<>
@@ -27,7 +27,7 @@ export function Services() {
 			</ServiceSection>
 
 			<ServiceSection
-				style="bg-gray-300 items-start text-black"
+				style="bg-gray-300 md:items-start items-center text-black"
 				title="CONSTRUÇÃO DE COBERTURAS E BARRACÕES DE ESTRUTURAS METÁLICAS"
 			>
 				<>
@@ -56,15 +56,18 @@ function ServiceSection({
 	children,
 }: ServiceSectionType) {
 	return (
-		<div className={`flex flex-col gap-4 p-28 w-full ${style}`}>
+		<div className={`flex flex-col gap-4 md:p-28 p-16 w-full ${style}`}>
 			<h2
-				className={`text-3xl font-bold w-2/5 ${
-					titleCenter ? 'text-center' : 'text-left'
+				className={`text-3xl font-bold md:w-2/5 w-1/2 ${
+					titleCenter ? 'text-center' : 'md:text-left text-center'
 				}`}
 			>
 				{title}
 			</h2>
-			<p className="text-lg w-2/5">{children}</p>
+
+			<p className="text-lg md:text-left text-center md:w-2/5 w-1/2">
+				{children}
+			</p>
 		</div>
 	);
 }
