@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { useState, useEffect } from 'react';
 
 export function NavBar() {
-	const [windowSize, setWindowSize] = useState(window.innerWidth);
+	const [windowSize, setWindowSize] = useState(800);
 	const [isNavActive, setIsNavActive] = useState(
 		windowSize > 767 ? true : false
 	);
@@ -14,7 +14,9 @@ export function NavBar() {
 		[windowSize]
 	);
 
-	window.addEventListener('resize', () => setWindowSize(window.innerWidth));
+	useEffect(() => {
+		window.addEventListener('resize', () => setWindowSize(window.innerWidth));
+	}, [])
 
 	return (
 		<div className="flex flex-col md:items-center items-end md:block w-full py-4 border-t-[1px] border-[#fff5]">
