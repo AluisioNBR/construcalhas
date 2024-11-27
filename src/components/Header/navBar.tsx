@@ -34,7 +34,7 @@ export function NavBar() {
 				onClick={menuClick}
 			>
 				<Image
-					className="hover:opacity-50 active:opacity-25 hover:animate-hoverLink"
+					className="hover:opacity-50 active:opacity-25"
 					width={48}
 					height={48}
 					src="/images/menu.png"
@@ -64,7 +64,7 @@ interface NavButtonType {
 function NavButton({ link, children }: NavButtonType) {
 	return (
 		<Link
-			className="text-xl font-bold hover:text-black"
+			className="text-xl font-bold hover:text-black hover:animate-fade animate-duration-150 animate-delay-100 animate-ease-in"
 			href={link}
 		>
 			{children}
