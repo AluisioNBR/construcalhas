@@ -8,16 +8,9 @@ export function Main() {
 
 			<Contact
 				local="Cidade exemplo - SLA"
-				link="#"
+				link="https://api.whatsapp.com/send?phone=554199615698"
 			>
-				(90)9986860021
-			</Contact>
-
-			<Contact
-				local="Cidade exemplo - SLA"
-				link="#"
-			>
-				(90)9986860021
+				(41) 99615698
 			</Contact>
 		</div>
 	);
@@ -35,6 +28,7 @@ function Contact({ local, link, children }: ContactType) {
 			<Link
 				className="flex flex-row items-center gap-4"
 				href={link}
+				target="_blank"
 			>
 				<Image
 					className="hover:opacity-50"

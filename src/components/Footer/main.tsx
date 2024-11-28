@@ -10,18 +10,12 @@ export function Main() {
 			<div className="flex md:flex-row flex-col md:gap-0 gap-4 items-center justify-between w-full">
 				<Contact
 					adress={{ name: 'Endereço exemplo', link: '#' }}
-					form1={{ name: '(90) 9986860021', link: '#' }}
-					form2={{ name: '(90) 9986860021', link: '#' }}
+					form1={{
+						name: '(41) 99615698',
+						link: 'https://api.whatsapp.com/send?phone=554199615698',
+					}}
 				>
 					Cidade exemplo 1
-				</Contact>
-
-				<Contact
-					adress={{ name: 'Endereço exemplo', link: '#' }}
-					form1={{ name: '(90) 9986860021', link: '#' }}
-					form2={{ name: '(90) 9986860021', link: '#' }}
-				>
-					Cidade exemplo 2
 				</Contact>
 			</div>
 		</div>
