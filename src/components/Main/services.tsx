@@ -1,73 +1,33 @@
+import Image from 'next/image';
+
 export function Services() {
 	return (
 		<article
-			className="flex flex-col w-full"
+			className="flex flex-row md:justify-end justify-center w-full bg-red-700 text-white"
 			id="services"
 		>
-			<ServiceSection
-				style="bg-red-700 md:items-end items-center text-white"
-				title="CONSTRUÇÃO E MANUTENÇÃO DE TELHADOS E CALHAS"
-			>
-				<>
+			<div className="md:block hidden relative h-[32rem] overflow-hidden">
+				<Image
+					src="/images/services-img.jpg"
+					alt=""
+					width={256 * 4}
+					height={256 * 2}
+				/>
+			</div>
+
+			<div className="flex flex-col gap-4 items-center lg:w-2/5 md:p-24 p-16">
+				<h2 className="text-3xl font-bold lg:text-left text-center">
+					CONSTRUÇÃO E MANUTENÇÃO DE TELHADOS E CALHAS
+				</h2>
+
+				<p className="text-lg lg:text-left text-center">
 					<b>O QUE FAZEMOS</b>
 					<br />
 					<br />
 					Construção e reforma de telhados e fabricação, manutenção e instalação
-					de calhas, rufos, pingadeiras e outros
-				</>
-			</ServiceSection>
-
-			<ServiceSection
-				style="bg-stone-800 items-center text-white"
-				title="CONSTRUÇÃO CIVIL E REFORMA EM GERAL"
-				titleCenter
-			>
-				Construção e reforma de casas e sobrados até 4 andares, acabamentos,
-				pinturas, colocação de pisos e porcelanatos, entre outros
-			</ServiceSection>
-
-			<ServiceSection
-				style="bg-gray-300 md:items-start items-center text-black"
-				title="CONSTRUÇÃO DE COBERTURAS E BARRACÕES DE ESTRUTURAS METÁLICAS"
-			>
-				<>
-					<b>O QUE FAZEMOS</b>
-					<br />
-					<br />
-					Reforma e construção da fundação a cobertura de barracões de
-					estruturas metálicas.
-				</>
-			</ServiceSection>
+					de calhas
+				</p>
+			</div>
 		</article>
-	);
-}
-
-interface ServiceSectionType {
-	title: string;
-	titleCenter?: boolean;
-	style: string;
-	children: string | JSX.Element | JSX.Element[];
-}
-
-function ServiceSection({
-	title,
-	titleCenter,
-	style,
-	children,
-}: ServiceSectionType) {
-	return (
-		<div className={`flex flex-col gap-4 md:p-28 p-16 w-full ${style}`}>
-			<h2
-				className={`text-3xl font-bold md:w-2/5 w-full ${
-					titleCenter ? 'text-center' : 'md:text-left text-center'
-				}`}
-			>
-				{title}
-			</h2>
-
-			<p className="text-lg md:text-left text-center md:w-2/5 w-full">
-				{children}
-			</p>
-		</div>
 	);
 }

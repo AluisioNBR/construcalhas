@@ -4,7 +4,7 @@ import Image from 'next/image';
 export function Main() {
 	return (
 		<div className="flex md:flex-row flex-col md:gap-0 gap-6 items-center justify-evenly w-full py-4">
-			<h2 className="text-4xl">Título</h2>
+			<h2 className="text-4xl">Construcalhas</h2>
 
 			<Contact
 				local="Cidade exemplo - SLA"

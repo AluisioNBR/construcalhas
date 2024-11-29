@@ -5,7 +5,7 @@ import Image from 'next/image';
 export function Main() {
 	return (
 		<div className="flex flex-col md:items-start items-center gap-4 bg-red-700 p-12 md:px-32 w-full text-white">
-			<h2 className="text-4xl">Título</h2>
+			<h2 className="text-4xl">Construcalhas</h2>
 
 			<div className="flex md:flex-row flex-col md:gap-0 gap-4 items-center justify-between w-full">
 				<Contact

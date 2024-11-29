@@ -2,18 +2,28 @@ import { FeedbackType } from './types';
 
 export const feedbacks: FeedbackType[] = [
 	{
-		client: 'Cliente 1',
+		client: 'Camila Nogueira',
 		feedback:
-			'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate beatae officia adipisci ipsum ea et, minus ipsam sint perspiciatis enim quod eaque perferendis nisi totam rem laboriosam veniam iusto illo. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit voluptas eum aperiam eos sed debitis earum placeat alias, fugit eius. Sequi, sint delectus. Atque eius dolores velit molestias praesentium. Sunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae dolor illo enim eos ex aliquam magni consectetur explicabo obcaecati. Recusandae nemo blanditiis dolorum incidunt atque dolores illum assumenda sequi quisquam!',
+			'Sempre tive dificuldade em encontrar profissionais que entendessem a necessidade de um serviço bem acabado, mas a Construcalhas superou minhas expectativas. Eles não apenas instalaram as calhas e revisaram o telhado da minha casa, como também deixaram tudo limpo e organizado após o trabalho. Além disso, o atendimento ao cliente foi impecável. Com certeza farei outros projetos com eles no futuro.',
 	},
 	{
-		client: 'Cliente 2',
+		client: 'Ana Paula Martins',
 		feedback:
-			'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis nesciunt eaque eius expedita officia ipsum vel optio reiciendis cumque, beatae molestiae? Pariatur non quae quam dolor fugit repudiandae, voluptatibus consequatur!',
+			'Super indico! A equipe é muito profissional, e as calhas ficaram exatamente como eu precisava. Excelente custo-benefício.',
 	},
 	{
-		client: 'Cliente 3',
+		client: 'Marcelo Santana',
 		feedback:
-			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi vel voluptates amet sit modi consequatur deserunt assumenda iusto? Ab alias nulla earum hic molestiae facilis autem, quidem dolor ea minima! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi nihil, repudiandae sequi dolores sed consequatur sapiente voluptate aspernatur dicta harum commodi, mollitia, fugiat culpa et quibusdam alias pariatur ad aperiam!',
+			'Minha experiência foi excelente! Desde o orçamento até a conclusão, tudo foi feito com muita transparência e cuidado. Nota 10.',
+	},
+	{
+		client: 'Rodrigo Carvalho',
+		feedback:
+			'O trabalho da Construcalhas foi excelente! Eu tinha problemas constantes com vazamentos no meu galpão comercial e, desde que eles refizeram o telhado e instalaram novas calhas, não tive mais nenhuma dor de cabeça. Eles entregaram o serviço no prazo, com muita eficiência, e até me deram dicas de manutenção preventiva. Foi uma experiência muito profissional e tranquila.',
+	},
+	{
+		client: 'Mariana Silva',
+		feedback:
+			'Tive uma ótima experiência com a Construcalhas. Estava preocupada com a possibilidade de atrasos, mas o serviço foi entregue antes do prazo e com um acabamento perfeito. As calhas instaladas ficaram lindas e super funcionais. Além disso, o atendimento foi muito humano e prestativo, algo que faz toda a diferença. Com certeza voltarei a contratar essa equipe."',
 	},
 ];
