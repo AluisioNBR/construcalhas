@@ -5,22 +5,19 @@ import Image from 'next/image';
 export function Main() {
 	return (
 		<div className="flex flex-col md:items-start items-center gap-8 bg-blue-800 p-12 md:px-32 w-full text-white">
-			<h2 className="text-4xl md:mx-16 lg:mx-44">Construcalhas</h2>
+			<h2 className="text-4xl">Construcalhas</h2>
 
-			<div className="flex md:flex-row flex-col md:gap-0 gap-4 items-center justify-evenly w-full">
+			<div className="flex md:flex-row flex-col md:gap-0 gap-4 items-center md:justify-start justify-center w-full">
 				<Contact
-					adress={{ name: 'Rua Rodolfo Paulo Herz n°09', link: 'https://maps.app.goo.gl/1Zfi1RC4S8sjMYg57' }}
+					adress={{
+						name: 'Rua Rodolfo Paulo Herz n°09',
+						link: 'https://maps.app.goo.gl/1Zfi1RC4S8sjMYg57',
+					}}
 					form1={{
 						name: '(41) 99615698',
 						link: 'https://api.whatsapp.com/send?phone=554199615698',
 					}}
-				>
-					Curitiba - PR
-				</Contact>
-
-				<Contact
-					adress={{ name: 'Rua Rodolfo Paulo Herz n°09', link: 'https://maps.app.goo.gl/1Zfi1RC4S8sjMYg57' }}
-					form1={{
+					form2={{
 						name: '(41) 998761910',
 						link: 'https://api.whatsapp.com/send?phone=5541998761910',
 					}}
