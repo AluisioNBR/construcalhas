@@ -5,9 +5,13 @@ export function Main() {
 	return (
 		<div className="flex md:flex-row flex-col md:gap-0 gap-6 items-center justify-evenly w-full py-4">
 			<div className="flex flex-row items-center gap-2">
-				<div className="flex items-center justify-center bg-[#fffb] rounded-2xl w-12 h-12 overflow-hidden">
-					<Image src="/images/icon.png" alt="logo" width={32} height={32} />
-				</div>
+				<Image
+					src="/images/icon-2.png"
+					alt="logo"
+					width={52}
+					height={52}
+					className="rounded-2xl"
+				/>
 				<h2 className="text-4xl">Construcalhas</h2>
 			</div>
 

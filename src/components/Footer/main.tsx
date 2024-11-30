@@ -10,15 +10,17 @@ export function Main() {
 			<div className="flex md:flex-row flex-col md:gap-0 gap-4 items-center md:justify-start justify-center w-full">
 				<Contact
 					adress={{
-						name: 'Rua Rodolfo Paulo Herz n°09',
+						phone: 'Rua Rodolfo Paulo Herz n°09',
 						link: 'https://maps.app.goo.gl/1Zfi1RC4S8sjMYg57',
 					}}
 					form1={{
-						name: '(41) 99615698',
+						owner: 'Guilherme',
+						phone: '(41) 99615698',
 						link: 'https://api.whatsapp.com/send?phone=554199615698',
 					}}
 					form2={{
-						name: '(41) 998761910',
+						owner: 'Maicon',
+						phone: '(41) 998761910',
 						link: 'https://api.whatsapp.com/send?phone=5541998761910',
 					}}
 				>
@@ -47,7 +49,7 @@ function Contact({ children, adress, form1, form2 }: ContactType) {
 						src="/images/location-pin.png"
 						alt={children}
 					/>
-					<span className="text-lg">{adress.name}</span>
+					<span className="text-lg">{adress.phone}</span>
 				</Link>
 
 				{form1 ? (
@@ -63,7 +65,9 @@ function Contact({ children, adress, form1, form2 }: ContactType) {
 							src="/images/whatsapp-logo.png"
 							alt={children}
 						/>
-						<span className="text-lg">{form1.name}</span>
+						<span className="text-lg">
+							{form1.phone} - {form1.owner}
+						</span>
 					</Link>
 				) : null}
 				{form2 ? (
@@ -79,7 +83,9 @@ function Contact({ children, adress, form1, form2 }: ContactType) {
 							src="/images/whatsapp-logo.png"
 							alt={children}
 						/>
-						<span className="text-lg">{form2.name}</span>
+						<span className="text-lg">
+							{form2.phone} - {form2.owner}
+						</span>
 					</Link>
 				) : null}
 			</div>
