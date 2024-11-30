@@ -4,18 +4,28 @@ import Image from 'next/image';
 
 export function Main() {
 	return (
-		<div className="flex flex-col md:items-start items-center gap-4 bg-red-700 p-12 md:px-32 w-full text-white">
-			<h2 className="text-4xl">Construcalhas</h2>
+		<div className="flex flex-col md:items-start items-center gap-8 bg-blue-800 p-12 md:px-32 w-full text-white">
+			<h2 className="text-4xl md:mx-16 lg:mx-44">Construcalhas</h2>
 
-			<div className="flex md:flex-row flex-col md:gap-0 gap-4 items-center justify-between w-full">
+			<div className="flex md:flex-row flex-col md:gap-0 gap-4 items-center justify-evenly w-full">
 				<Contact
-					adress={{ name: 'Endereço exemplo', link: '#' }}
+					adress={{ name: 'Rua Rodolfo Paulo Herz n°09', link: 'https://maps.app.goo.gl/1Zfi1RC4S8sjMYg57' }}
 					form1={{
 						name: '(41) 99615698',
 						link: 'https://api.whatsapp.com/send?phone=554199615698',
 					}}
 				>
-					Cidade exemplo 1
+					Curitiba - PR
+				</Contact>
+
+				<Contact
+					adress={{ name: 'Rua Rodolfo Paulo Herz n°09', link: 'https://maps.app.goo.gl/1Zfi1RC4S8sjMYg57' }}
+					form1={{
+						name: '(41) 998761910',
+						link: 'https://api.whatsapp.com/send?phone=5541998761910',
+					}}
+				>
+					Curitiba - PR
 				</Contact>
 			</div>
 		</div>

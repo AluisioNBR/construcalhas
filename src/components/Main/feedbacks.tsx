@@ -52,7 +52,7 @@ export function Feedbacks() {
 			<div
 				className={`flex flex-col items-center md:w-3/4 w-full h-80 ${animateFeedback}`}
 			>
-				<p className="text-white text-center md:text-lg text-base bg-red-500 p-4">
+				<p className="text-white text-center md:text-lg text-base bg-blue-600 p-4">
 					"{currentFeedback?.feedback}"
 				</p>
 			</div>

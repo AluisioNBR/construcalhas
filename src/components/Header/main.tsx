@@ -4,13 +4,25 @@ import Image from 'next/image';
 export function Main() {
 	return (
 		<div className="flex md:flex-row flex-col md:gap-0 gap-6 items-center justify-evenly w-full py-4">
-			<h2 className="text-4xl">Construcalhas</h2>
+			<div className="flex flex-row items-center gap-2">
+				<div className="flex items-center justify-center bg-[#fffb] rounded-2xl w-12 h-12 overflow-hidden">
+					<Image src="/images/icon.png" alt="logo" width={32} height={32} />
+				</div>
+				<h2 className="text-4xl">Construcalhas</h2>
+			</div>
 
 			<Contact
-				local="Cidade exemplo - SLA"
+				local="Curitiba - PR"
 				link="https://api.whatsapp.com/send?phone=554199615698"
 			>
 				(41) 99615698
+			</Contact>
+
+			<Contact
+				local="Curitiba - PR"
+				link="https://api.whatsapp.com/send?phone=5541998761910"
+			>
+				(41) 998761910
 			</Contact>
 		</div>
 	);

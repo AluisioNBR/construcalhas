@@ -25,7 +25,7 @@ export function NavBar() {
 
 	return (
 		<div
-			className={`flex flex-col md:items-center items-end md:block w-full py-4 border-y-[1px] border-[#fff5] bg-red-700 ${
+			className={`flex flex-col md:items-center items-end md:block w-full py-4 border-y-[1px] border-[#fff5] bg-blue-800 ${
 				scrollPosition > 90 ? 'fixed top-0 z-10' : ''
 			}`}
 		>

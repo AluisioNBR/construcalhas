@@ -7,13 +7,9 @@ export function About() {
 			<h2 className="text-3xl font-bold w-full">SOBRE NÓS</h2>
 
 			<p className="md:w-1/2 w-full">
-				Desde 2005 no mercado, a JC conta com a experiência do seus fundadores
-				com mais de 20 anos no ramo de construção, calhas e telhados, sempre
+				Desde 2005 no mercado, a Construcalhas conta com a experiência do seus fundadores
+				com mais de 20 anos no ramo de calhas e telhados, sempre
 				prezando pela pontualidade na entrega.
-				<br />
-				<br />
-				Construímos casas do início ao acabamento, trabalhando com material de
-				ótima qualidade e preço justo.
 				<br />
 				<br />
 				Atender as exigências do cliente é o nosso objetivo principal, além de
