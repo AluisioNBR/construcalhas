@@ -1,9 +1,11 @@
+'use client';
 import Link from 'next/link';
 import Image from 'next/image';
+import { useState, useEffect } from 'react';
 
 export function Main() {
 	return (
-		<div className="flex md:flex-row flex-col md:gap-0 gap-6 items-center justify-evenly w-full py-4">
+		<div className="flex md:flex-row flex-col md:gap-6 items-center justify-evenly w-full py-4">
 			<div className="flex flex-row items-center gap-2">
 				<Image
 					src="/images/icon-2.png"
@@ -39,10 +41,28 @@ interface ContactType {
 }
 
 function Contact({ local, link, children }: ContactType) {
+	const [windowSize, setWindowSize] = useState(800);
+	const [isVisible, setisVisible] = useState(true);
+
+	useEffect(
+		() =>
+			window.addEventListener('resize', () => setWindowSize(window.innerWidth)),
+		[]
+	);
+
+	useEffect(() => {
+		const userAgent = navigator.userAgent.toLocaleLowerCase();
+		setisVisible(
+			windowSize < 768 || userAgent.includes('mobile') ? false : true
+		);
+	}, [windowSize]);
+
 	return (
 		<div>
 			<Link
-				className="flex flex-row items-center gap-4"
+				className={`${
+					isVisible ? 'flex' : 'hidden absolute'
+				} flex-row items-center gap-4`}
 				href={link}
 				target="_blank"
 			>
