@@ -17,9 +17,9 @@ export function Main() {
 
 			<Contact
 				local="Curitiba - PR"
-				link="https://api.whatsapp.com/send?phone=554199615698"
+				link="https://api.whatsapp.com/send?phone=5541999615698"
 			>
-				(41) 99615698
+				(41) 999615698
 			</Contact>
 
 			<Contact

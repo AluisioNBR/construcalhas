@@ -6,7 +6,7 @@ export function Services() {
 			className="flex flex-row md:justify-end justify-center w-full bg-blue-800 text-white"
 			id="services"
 		>
-			<div className="md:block hidden relative h-[32rem] overflow-hidden">
+			<div className="md:block hidden relative h-[35rem] overflow-hidden">
 				<Image
 					src="/images/services-img.jpg"
 					alt=""
@@ -24,8 +24,8 @@ export function Services() {
 					<b>O QUE FAZEMOS</b>
 					<br />
 					<br />
-					Fabricação, manutenção e instalação de calhas, e construção e reforma
-					de telhados.
+					Construção e reforma de telhados e fabricação, manutenção e instalação
+					de calhas, rufos, pingadeiras , coifas e outros.
 				</p>
 			</div>
 		</article>

@@ -15,8 +15,8 @@ export function Main() {
 					}}
 					form1={{
 						owner: 'Guilherme',
-						phone: '(41) 99615698',
-						link: 'https://api.whatsapp.com/send?phone=554199615698',
+						phone: '(41) 999615698',
+						link: 'https://api.whatsapp.com/send?phone=5541999615698',
 					}}
 					form2={{
 						owner: 'Maicon',
