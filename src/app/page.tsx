@@ -1,6 +1,7 @@
 import { Header } from '../components/Header';
 import { Main } from '../components/Main';
 import { Footer } from '../components/Footer';
+import { WhatsappButton } from '@/components/WhatsappButton/WhatsppButton';
 
 export default function Home() {
 	return (
@@ -10,6 +11,8 @@ export default function Home() {
 			<Main />
 
 			<Footer />
+
+			<WhatsappButton />
 		</div>
 	);
 }
