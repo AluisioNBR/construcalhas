@@ -3,6 +3,13 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { useState, useEffect } from 'react';
 
+/**
+ * The Main component is responsible for rendering the main section of header of the application.
+ * It displays the company logo, name, and contact information using the Contact component.
+ * The Contact component is conditionally rendered based on the window size and user agent.
+ *
+ * @returns {JSX.Element} - The JSX element representing the Main component.
+ */
 export function Main() {
 	return (
 		<div className="flex md:flex-row flex-col md:gap-6 items-center justify-evenly w-full py-4">
@@ -40,6 +47,16 @@ interface ContactType {
 	children: string;
 }
 
+/**
+ * The Contact component is responsible for rendering a contact information block.
+ * It conditionally renders based on the window size and user agent.
+ *
+ * @param local - The locality of the contact information.
+ * @param link - The link to the contact information (e.g., WhatsApp number).
+ * @param children - The contact information (e.g., phone number).
+ *
+ * @returns {JSX.Element} - The JSX element representing the Contact component.
+ */
 function Contact({ local, link, children }: ContactType) {
 	const [windowSize, setWindowSize] = useState(800);
 	const [isVisible, setisVisible] = useState(true);

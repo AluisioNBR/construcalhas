@@ -1,5 +1,11 @@
 import Image from 'next/image';
 
+/**
+ * This function represents the Intro component of the application.
+ * It displays a hero section with a background image, a logo, and a title.
+ *
+ * @returns {JSX.Element} - A JSX element representing the Intro component.
+ */
 export function Intro() {
 	return (
 		<article className="flex flex-col gap-4 md:p-[10.5rem] px-16 py-32 bg-blend-overlay bg-cover bg-no-repeat bg-left bg-[url('/images/telhado2-1.jpg')] bg-stone-800 w-full">

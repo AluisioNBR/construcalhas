@@ -1,5 +1,11 @@
 import Image from 'next/image';
 
+/**
+ * This function represents the Services section of a website. It returns a React component
+ * that displays an image, a title, and a description of the services offered.
+ *
+ * @returns {React.ReactElement} - A React component representing the Services section.
+ */
 export function Services() {
 	return (
 		<article

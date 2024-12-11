@@ -2,6 +2,11 @@ import Link from 'next/link';
 import { ContactType } from './types';
 import Image from 'next/image';
 
+/**
+ * The `Main` component represents the main section of Footer component, which includes a title and contact information.
+ *
+ * @returns {JSX.Element} A JSX element containing the main section with a title and contact details.
+ */
 export function Main() {
 	return (
 		<div className="flex flex-col md:items-start items-center gap-8 bg-blue-800 p-12 md:px-32 w-full text-white">
@@ -30,6 +35,26 @@ export function Main() {
 		</div>
 	);
 }
+
+/**
+ * The `Contact` component displays contact information, including an address and optional contact forms.
+ *
+ * @param {Object} props - The props for the component.
+ * @param {ReactNode} props.children - The child content, typically the location name.
+ * @param {Object} props.adress - The address details.
+ * @param {string} props.adress.phone - The address or phone number to display.
+ * @param {string} props.adress.link - The link to the address location (e.g., Google Maps).
+ * @param {Object} [props.form1] - The first contact form details (optional).
+ * @param {string} props.form1.owner - The name of the contact owner.
+ * @param {string} props.form1.phone - The contact phone number.
+ * @param {string} props.form1.link - The link to reach the contact, typically via WhatsApp.
+ * @param {Object} [props.form2] - The second contact form details (optional).
+ * @param {string} props.form2.owner - The name of the second contact owner.
+ * @param {string} props.form2.phone - The second contact phone number.
+ * @param {string} props.form2.link - The link to reach the second contact, typically via WhatsApp.
+ *
+ * @returns {JSX.Element} A JSX element displaying contact information and links.
+ */
 
 function Contact({ children, adress, form1, form2 }: ContactType) {
 	return (

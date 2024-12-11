@@ -1,3 +1,9 @@
+/**
+ * This function represents the About section of the application.
+ * It returns a React component that displays information about the company.
+ *
+ * @returns {JSX.Element} - A React component representing the About section.
+ */
 export function About() {
 	return (
 		<article
@@ -7,8 +13,8 @@ export function About() {
 			<h2 className="text-3xl font-bold w-full">SOBRE NÓS</h2>
 
 			<p className="md:w-1/2 w-full">
-				Desde 2005 no mercado, a Construcalhas conta com a experiência do seus fundadores
-				com mais de 20 anos no ramo de calhas e telhados, sempre
+				Desde 2005 no mercado, a Construcalhas conta com a experiência do seus
+				fundadores com mais de 20 anos no ramo de calhas e telhados, sempre
 				prezando pela pontualidade na entrega.
 				<br />
 				<br />

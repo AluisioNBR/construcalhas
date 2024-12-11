@@ -1,4 +1,4 @@
-import { SpeedInsights } from "@vercel/speed-insights/next"
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import type { Metadata } from 'next';
 import localFont from 'next/font/local';
 import './globals.css';
@@ -23,9 +23,17 @@ const montserrat = localFont({
 export const metadata: Metadata = {
 	title: 'Construcalhas',
 	description:
-		'Especialistas em telhados e calhas, a Construcalhas oferece soluções completas e de alta qualidade para proteção e acabamento do seu imóvel. Confiança e durabilidade em cada projeto!',
+		'Especialistas em calhas e telhados, a Construcalhas oferece soluções completas e de alta qualidade para proteção e acabamento do seu imóvel. Confiança e durabilidade em cada projeto!',
 };
 
+/**
+ * The RootLayout component is the main layout wrapper for the entire application.
+ * It sets up the HTML structure, global styles, and integrates the Speed Insights component.
+ *
+ * @param children - The React children components to be rendered within the layout.
+ *
+ * @returns The RootLayout component with the specified children and layout structure.
+ */
 export default function RootLayout({
 	children,
 }: Readonly<{
@@ -40,7 +48,7 @@ export default function RootLayout({
 				className={`${montserrat.variable} ${geistMono.variable} antialiased`}
 			>
 				<SpeedInsights />
-				
+
 				{children}
 			</body>
 		</html>

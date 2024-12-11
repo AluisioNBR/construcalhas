@@ -1,5 +1,10 @@
 import Image from 'next/image';
 
+/**
+ * This function represents the Products section of a website. It displays a grid of images and a brief description.
+ *
+ * @returns {JSX.Element} - A React component that renders the Products section.
+ */
 export function Products() {
 	return (
 		<article

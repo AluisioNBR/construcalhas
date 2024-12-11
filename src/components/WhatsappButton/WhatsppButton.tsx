@@ -1,6 +1,11 @@
 import Link from 'next/link';
 import Image from 'next/image';
 
+/**
+ * A functional component that renders a Whatsapp button as a link to a specified Whatsapp chat.
+ *
+ * @returns {JSX.Element} - A JSX element representing the Whatsapp button.
+ */
 export function WhatsappButton() {
 	return (
 		<Link

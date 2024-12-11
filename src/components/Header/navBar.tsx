@@ -3,6 +3,13 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
 
+/**
+ * The NavBar component is responsible for rendering the navigation bar at the top of the application.
+ * It includes a logo, menu button, and navigation links. The navigation bar changes its appearance based on
+ * the window size and scroll position.
+ *
+ * @returns {JSX.Element} - The rendered NavBar component.
+ */
 export function NavBar() {
 	const [windowSize, setWindowSize] = useState(800);
 	const [scrollPosition, setScrollPosition] = useState(0);
@@ -61,6 +68,15 @@ interface NavButtonType {
 	children: string;
 }
 
+/**
+ * A functional component that renders a navigation button with a link and children.
+ *
+ * @param props - The properties of the NavButton component.
+ * @param props.link - The URL to navigate when the button is clicked.
+ * @param props.children - The text content of the button.
+ *
+ * @returns {JSX.Element} - The rendered NavButton component.
+ */
 function NavButton({ link, children }: NavButtonType) {
 	return (
 		<Link
