@@ -2,6 +2,7 @@ import { Header } from '../components/Header';
 import { Main } from '../components/Main';
 import { Footer } from '../components/Footer';
 import { WhatsappButton } from '@/components/WhatsappButton/WhatsppButton';
+import Script from 'next/script';
 
 /**
  * The Home component represents the main page of the application.
@@ -13,11 +14,8 @@ export default function Home() {
 	return (
 		<div className="flex flex-col items-center justify-start min-h-screen font-[family-name:var(--font-geist-sans)]">
 			<Header />
-
 			<Main />
-
 			<Footer />
-
 			<WhatsappButton />
 		</div>
 	);
