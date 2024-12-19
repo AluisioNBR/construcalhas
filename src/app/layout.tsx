@@ -67,6 +67,26 @@ export default function RootLayout({
 						`,
 					}}
 				/>
+				<Script
+					dangerouslySetInnerHTML={{
+						__html: `
+						function gtag_report_conversion(url) {
+						var callback = function () {
+							if (typeof(url) != 'undefined') {
+								window.location = url;
+							}
+						};
+						gtag('event', 'conversion', {
+								'send_to': 'AW-11505106929/zyAiCM_Xo_kZEPH_h-4q',
+								'value': 1.0,
+								'currency': 'BRL',
+								'event_callback': callback
+						});
+						return false;
+					}
+					`,
+					}}
+				/>
 			</head>
 			<body
 				className={`${montserrat.variable} ${geistMono.variable} antialiased`}

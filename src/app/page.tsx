@@ -2,7 +2,6 @@ import { Header } from '../components/Header';
 import { Main } from '../components/Main';
 import { Footer } from '../components/Footer';
 import { WhatsappButton } from '@/components/WhatsappButton/WhatsppButton';
-import Script from 'next/script';
 
 /**
  * The Home component represents the main page of the application.
